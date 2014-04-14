@@ -20,3 +20,4 @@ $app->theme->setVariable('title', "Hello World Pagecontroller")
 
 // Render the response using theme engine.
 $app->theme->render();
+?>
