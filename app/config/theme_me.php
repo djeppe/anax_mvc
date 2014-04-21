@@ -21,14 +21,29 @@ return [
      * Add default views.
      */
     'views' => [
+        // Header
         [
             'region' => 'header', 
             'template' => 'me/header', 
             'data' => [
                 'setTitle' => "Min me-sida i PHPMVC",
-                'siteTagline' => "Här är en tagline som säger nåt vackert",
+                'siteTagline' => "When Life Gives You Questions, Google has Answers",
             ], 
             'sort' => -1],
+        
+        // Navbar
+        [
+            'region' => 'navbar', 
+            'template' => [
+                'callback' => function() {
+                    return $this->di->navbar->create();
+                },
+            ],
+            'data' => [],
+            'sort' => -1
+        ],
+        
+        // Footer
         ['region' => 'footer', 'template' => 'me/footer', 'data' => [], 'sort' => -1],
     ],
 
@@ -45,7 +60,7 @@ return [
         'title_append' => ' | Anax a web template',
 
         // Stylesheets
-        'stylesheets' => ['css/style.css'],
+        'stylesheets' => ['css/style.css', 'css/navbar_me.css', 'css/Flaticon/flaticon.css'],
 
         // Inline style
         'style' => null,

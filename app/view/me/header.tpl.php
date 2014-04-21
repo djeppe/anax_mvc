@@ -1,3 +1,3 @@
-<img class='sitelogo' src='<?=$this->url->asset("img/anax.png")?>' alt='Anax Logo'/>
-<span class='sitetitle'><?=$siteTitle?></span>
-<span class='siteslogan'><?=$siteTagline?></span>
+<img class='sitelogo' src='<?=$this->url->asset("img/shocker.png")?>' alt='Shocker Logo'/>
+<span class='sitetitle'><?=isset($siteTitle) ? $siteTitle : "PHPMVC Framework"?></span>
+<span class='siteslogan'><?=isset($siteTagline) ? $siteTagline : "Reusable modules for web development"?></span>

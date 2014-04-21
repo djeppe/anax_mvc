@@ -38,7 +38,7 @@ return [
         'title_append' => ' | Anax a web template',
 
         // Stylesheets
-        'stylesheets' => ['css/style.css'],
+        'stylesheets' => ['css/style.css', 'css/navbar.css'],
 
         // Inline style
         'style' => null,
